@@ -1,11 +1,21 @@
 @font-face {
-	font-family: analogueRegular;
-	src: url(../fonts/analogue/PostScript/AnalogueRed-55Regular.otf);
+	font-family: bigPixelRegular;
+	src: url(../fonts/big_pixel/Big\ Pixel\ Light\ demo.otf);
 }
 
 @font-face {
-	font-family: analogueBold;
-	src: url(../fonts/analogue/PostScript/AnalogueRed-75Bold.otf);
+	font-family: bigPixelBold;
+	src: url(../fonts/big_pixel/Big\ Pixel\ demo.otf);
+}
+
+@font-face {
+	font-family: tommyRegular;
+	src: url(../fonts/tommy/MADE\ TOMMY\ Regular_PERSONAL\ USE.otf);
+}
+
+@font-face {
+	font-family: tommyBold;
+	src: url(../fonts/tommy/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
 }
 
 body {
@@ -20,21 +30,22 @@ body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: analogueBold;
-	margin: 16px;
+	font-family: tommyBold;
+	margin: 8px;
 }
 
-p, span, a {
-	font-family: analogueRegular;
-	margin: 16px;
+p, span {
+	font-family: tommyRegular;
+	margin: 8px;
 }
 
 a {
-	color: black;
+	font-family: bigPixelRegular;
+	color: gray;
 }
 
 a:hover {
-	color: gray;
+	color: greenyellow;
 }
 
 nav, .sideBar, main, .explorer {
@@ -66,14 +77,14 @@ input {
 nav {
 	position: fixed;
 	top: 64px;
-	left: 272px;
+	left: 176px;
 	right: 8px;
 }
 
 main {
 	position: fixed;
 	top: 107px;
-	left: 272px;
+	left: 176px;
 	bottom: 48px;
 	right: 8px;
 	display: block;
@@ -82,7 +93,7 @@ main {
 
 .sideBar {
 	position: fixed;
-	width: 256px;
+	width: 160px;
 	top: 64px;
 	left: 8px;
 	bottom: 8px;
@@ -95,14 +106,14 @@ main {
 	position: fixed;
 	background-color: black;
 	color: white;
-	left: 272px;
+	left: 176px;
 	bottom: 8px;
 	right: 8px;
 	height: 32px;
 }
 
 button {
-	font-family: analogueRegular;
+	font-family: bigPixelBold;
 	background-color: white;
 	width: 100%;
 	height: 32px;
@@ -113,8 +124,8 @@ button {
 }
 
 button:hover {
-	background-color: black;
-	color: white;
+	background-image: linear-gradient(to bottom right, purple, green);
+	color: yellow;
 }
 
 footer {
@@ -158,8 +169,8 @@ footer {
 	width: 100%;
 	background-color: gray;
 	height: 1px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 32px;
+	margin-bottom: 32px;
 }
 
 .picLarge, .picMedium, .picSmall {
