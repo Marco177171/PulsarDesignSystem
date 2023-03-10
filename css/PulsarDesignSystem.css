@@ -108,8 +108,12 @@ header {
 
 input {
 	background-color: black;
-	color: white;
+	color: chartreuse;
+	font-family: bigPixelRegular;
 	border: 1px solid white;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
 }
 
 nav {
@@ -136,6 +140,7 @@ main {
 	overflow-y: auto;
 }
 
+
 .sideBar {
 	position: fixed;
 	padding: 8px;
@@ -149,6 +154,12 @@ main {
 	overflow-y: auto;
 }
 
+@media only screen and (max-width: 850px) {
+	.sideBar {
+		display: none;
+	}
+}
+
 .explorer {
 	position: fixed;
 	background-color: purple;
@@ -158,6 +169,12 @@ main {
 	right: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
+}
+
+@media only screen and (max-width: 850px) {
+	main, nav, .explorer {
+		left: 0px;
+	}
 }
 
 button {
@@ -265,6 +282,7 @@ ul {
 }
 
 .row {
+	box-sizing: border-box;
 	display: flex;
 }
 
@@ -274,24 +292,25 @@ ul {
 	}
 }
 
+.col3, .col4, .col6, .col12 {
+	box-sizing: border-box;
+	padding: 8px;
+}
+
 .col12 {
 	width: 100%;
-	padding: 4px;
 }
 
 .col6 {
 	width: 50%;
-	padding: 4px;
 }
 
 .col4 {
 	width: 33.33%;
-	padding: 4px;
 }
 
 .col3 {
 	width: 25%;
-	padding: 4px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -324,10 +343,4 @@ ul {
 
 .picSmall {
 	height: 160px;
-}
-
-input {
-	position: relative;
-	padding: 2px;
-	width: 100%;
 }
