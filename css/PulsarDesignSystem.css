@@ -117,6 +117,45 @@ input {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+input[type="range"] {
+	-webkit-appearance: none;
+	height: 2px;
+	border: none;
+	background-color: chartreuse;
+	background-size: 70% 100%;
+	background-repeat: no-repeat;
+}
+  
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 16px;
+	width: 4px;
+	background: white;
+	cursor: ew-resize;
+	transition: background .3s ease-in-out;
+}
+  
+input[type=range]::-webkit-slider-runnable-track  {
+	-webkit-appearance: none;
+	box-shadow: none;
+	border: none;
+	background: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
 }
 
 nav {
@@ -265,12 +304,16 @@ th {
 	text-align: left;
 	color: yellow;
 	background-color: purple;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 td {
 	font-family: bigPixelRegular;
 	color: yellow;
 	border: 1px solid #505050;
+	padding-left: 8px;
+	padding-right: 8px;
 }
 
 ul {
