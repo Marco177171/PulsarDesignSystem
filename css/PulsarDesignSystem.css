@@ -92,6 +92,8 @@ h6 {
 a {
 	color: yellow;
 	text-decoration: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 a:hover {
