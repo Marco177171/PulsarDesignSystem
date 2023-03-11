@@ -10,7 +10,7 @@ body {
     scrollbar-width: none;  /* Firefox */
 }
 
-body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar { 
+body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar, .chat::-webkit-scrollbar { 
     display: none;  /* Safari and Chrome */
 }
 
@@ -83,6 +83,10 @@ a {
 
 a:hover {
 	text-decoration: underline;
+}
+
+span {
+	font-size: 0.8em;
 }
 
 header {
@@ -184,7 +188,7 @@ main {
 	overflow-y: auto;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
 	.sideBar {
 		display: none;
 	}
@@ -201,7 +205,7 @@ main {
 	padding-right: 8px;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 950px) {
 	main, nav, .explorer {
 		left: 0px;
 	}
@@ -390,4 +394,22 @@ ul {
 	vertical-align: auto;
 	margin: auto;
 	max-width: 256px;
+}
+
+.chat {
+	position: absolute;
+	box-sizing: border-box;
+	overflow: auto;
+	top: 80px;
+	right: 8px;
+	left: 8px;
+	bottom: 48px;
+}
+
+.chatInput {
+	position: absolute;
+	box-sizing: border-box;
+	left: 8px;
+	bottom: 12px;
+	right: 80px;
 }
