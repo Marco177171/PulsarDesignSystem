@@ -121,6 +121,7 @@ input {
 	margin: 0px;
 	text-align: center;
 	box-sizing: border-box;
+	font-size: 1em;
 }
 
 input[type="range"] {
@@ -372,8 +373,8 @@ ul {
 	width: 100%;
 	background-color: white;
 	height: 1px;
-	margin-top: 4px;
-	margin-bottom: 4px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .picLarge, .picMedium, .picSmall {
