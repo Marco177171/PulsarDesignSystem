@@ -379,3 +379,15 @@ ul {
 .picSmall {
 	height: 160px;
 }
+
+.centralLarge {
+	vertical-align: auto;
+	margin: auto;
+	max-width: 512px;
+}
+
+.centralMedium {
+	vertical-align: auto;
+	margin: auto;
+	max-width: 256px;
+}
