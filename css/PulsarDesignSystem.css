@@ -413,3 +413,9 @@ ul {
 	bottom: 12px;
 	right: 80px;
 }
+
+.searchBox {
+	position: relative;
+	display: flex;
+	padding: 8px;
+}
