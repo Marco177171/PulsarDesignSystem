@@ -153,7 +153,7 @@ input[type="color"]::-webkit-color-swatch {
 nav {
 	position: fixed;
 	top: 35px;
-	left: 176px;
+	left: 240px;
 	right: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -163,7 +163,7 @@ nav {
 main {
 	position: fixed;
 	top: 56px;
-	left: 176px;
+	left: 240px;
 	padding-left: 8px;
 	padding-right: 8px;
 	bottom: 21px;
@@ -174,11 +174,10 @@ main {
 	overflow-y: auto;
 }
 
-
 .sideBar {
 	position: fixed;
 	padding: 8px;
-	width: 160px;
+	width: 226px;
 	top: 35px;
 	left: 0px;
 	bottom: 0px;
@@ -198,7 +197,7 @@ main {
 	position: fixed;
 	background-color: purple;
 	color: white;
-	left: 176px;
+	left: 240px;
 	bottom: 0px;
 	right: 0px;
 	padding-left: 8px;
@@ -375,6 +374,7 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: flex;
 }
 
 .picLarge {
@@ -399,6 +399,20 @@ ul {
 	vertical-align: auto;
 	margin: auto;
 	max-width: 256px;
+}
+
+.innerTextLeft, .innerTextRight {
+	position: relative;
+}
+
+.innerTextLeft {
+	left: 0px;
+}
+
+.innerTextRight {
+	right: 0px;
+	float: ;
+	text-align: right;
 }
 
 .chat {
