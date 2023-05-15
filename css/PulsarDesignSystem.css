@@ -182,7 +182,7 @@ main {
 	top: 35px;
 	left: 0px;
 	bottom: 0px;
-	background-color: #101010;
+	background-color: #202020;
 	color: white;
     display: inline;
 	overflow-y: auto;
@@ -318,6 +318,10 @@ ul {
 .card {
 	width: 100%;
 	background-color: #101010;
+}
+
+.card:hover {
+	background-color: #202020;
 }
 
 .row {
