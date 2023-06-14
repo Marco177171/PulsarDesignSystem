@@ -94,6 +94,7 @@ header {
 	top: 0px;
 	left: 0px;
 	right: 0px;
+	height: 40px;
 	background-color: yellow;
 	color: black;
 	padding-left: 8px;
@@ -108,9 +109,17 @@ input {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	text-align: center;
 	box-sizing: border-box;
 	font-size: 1em;
+}
+
+input::file-selector-button {
+	-webkit-appearance: none;
+    color: #808080;
+	background-color: #202020;
+	font-family: cpmono;
+    margin-right: 8px;
+	border: none;
 }
 
 input[type="range"] {
@@ -152,9 +161,10 @@ input[type="color"]::-webkit-color-swatch {
 
 nav {
 	position: fixed;
-	top: 35px;
+	top: 40px;
 	left: 240px;
 	right: 0px;
+	height: 24px;
 	padding-left: 8px;
 	padding-right: 8px;
 	background-color: purple;
@@ -162,11 +172,10 @@ nav {
 
 main {
 	position: fixed;
-	top: 56px;
+	top: 64px;
 	left: 240px;
-	padding-left: 8px;
-	padding-right: 8px;
-	bottom: 21px;
+	padding: 8px;
+	bottom: 24px;
 	right: 0px;
 	display: block;
 	background-color: #050505;
@@ -178,7 +187,7 @@ main {
 	position: fixed;
 	padding: 8px;
 	width: 226px;
-	top: 35px;
+	top: 40px;
 	left: 0px;
 	bottom: 0px;
 	background-color: #202020;
@@ -200,10 +209,22 @@ main {
 	left: 240px;
 	bottom: 0px;
 	right: 0px;
+	height: 24px;
 	padding-left: 8px;
 	padding-right: 8px;
 	text-align: right;
 }
+
+footer {
+	margin-top: 32px;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: yellow;
+	color: black;
+}
+
+footer a {color: black;}
+footer a:hover {color: purple;}
 
 @media only screen and (max-width: 950px) {
 	main, nav, .explorer {
