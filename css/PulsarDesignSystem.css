@@ -1,6 +1,16 @@
 :root {
 	--neonyellow: #FFF01F;
 	--neongreen: #ADF802;
+	--g1: #101010;
+	--g2: #202020;
+	--g3: #303030;
+	--g4: #404040;
+	--g5: #505050;
+	--g6: #606060;
+	--g7: #707070;
+	--g8: #808080;
+	--g9: #909090;
+	--g10: #D3D3D3;
 }
 
 @font-face {
@@ -57,16 +67,16 @@ header {
 	right: 0px;
 	height: 40px;
 	background-color: var(--neonyellow);
-	color: black;
+	color: var(--g1);
 	padding-left: 8px;
 	padding-right: 8px;
 }
 
 input {
-	background-color: black;
-	color: chartreuse;
+	background-color: var(--g1);
+	color: var(--neongreen);
 	font-family: cpmono;
-	border: 1px solid white;
+	border: 1px solid var(--g10);
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
@@ -76,8 +86,8 @@ input {
 
 input::file-selector-button {
 	-webkit-appearance: none;
-    color: #808080;
-	background-color: #202020;
+    color: var(--g8);
+	background-color: var(--g2);
 	font-family: cpmono;
     margin-right: 8px;
 	border: none;
@@ -87,7 +97,7 @@ input[type="range"] {
 	-webkit-appearance: none;
 	height: 2px;
 	border: none;
-	background-color: chartreuse;
+	background-color: var(--neongreen);
 	background-size: 70% 100%;
 	background-repeat: no-repeat;
 }
@@ -96,7 +106,7 @@ input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	height: 16px;
 	width: 4px;
-	background: white;
+	background: var(--g10);
 	cursor: ew-resize;
 	transition: background .3s ease-in-out;
 }
@@ -131,20 +141,20 @@ main {
 	bottom: 24px;
 	right: 0px;
 	display: block;
-	background-color: #050505;
-	color: white;
+	background-color: var(--g1);
+	color: var(--g10);
 	overflow-y: auto;
 }
 
 .sideBar {
 	position: fixed;
 	padding: 8px;
-	width: 226px;
+	width: 224px;
 	top: 40px;
 	left: 0px;
 	bottom: 0px;
-	background-color: #202020;
-	color: white;
+	background-color: var(--g4);
+	color: var(--g10);
     display: inline;
 	overflow-y: auto;
 }
@@ -156,7 +166,7 @@ main {
 .explorer {
 	position: fixed;
 	background-color: purple;
-	color: white;
+	color: var(--g10);
 	left: 240px;
 	bottom: 0px;
 	right: 0px;
@@ -171,10 +181,10 @@ footer {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: var(--neonyellow);
-	color: black;
+	color: var(--g1);
 }
 
-footer a {color: black;}
+footer a {color: var(--g1);}
 footer a:hover {color: purple;}
 
 @media only screen and (max-width: 950px) {
@@ -190,70 +200,70 @@ button {
 }
 
 button.default {
-	background-color: black;
-	border: 1px solid white;
-	color: white;
+	background-color: var(--g1);
+	border: 1px solid var(--g10);
+	color: var(--g10);
 }
 
 button.default:hover {
-	background-color: white;
-	color: black;
+	background-color: var(--g10);
+	color: var(--g1);
 }
 
 button.success {
-	background-color: black;
-	border: 1px solid chartreuse;
-	color: chartreuse;
+	background-color: var(--g1);
+	border: 1px solid var(--neongreen);
+	color: var(--neongreen);
 }
 
 button.success:hover {
-	background-color: chartreuse;
-	color: black;
+	background-color: var(--neongreen);
+	color: var(--g1);
 }
 
 button.warning {
-	background-color: black;
-	border: 1px solid orange;
-	color: orange;
+	background-color: var(--g1);
+	border: 1px solid var(--neonyellow);
+	color: var(--neonyellow);
 }
 
 button.warning:hover {
-	background-color: orange;
-	color: black;
+	background-color: var(--neonyellow);
+	color: var(--g1);
 }
 
 button.danger {
-	background-color: black;
+	background-color: var(--g1);
 	border: 1px solid red;
 	color: var(--neonyellow);
 }
 
 button.danger:hover {
 	background-color: red;
-	color: black;
+	color: var(--g1);
 }
 
 button.info {
-	background-color: black;
+	background-color: var(--g1);
 	border: 1px solid lightskyblue;
 	color: lightskyblue;
 }
 
 button.info:hover {
 	background-color: lightskyblue;
-	color: black;
+	color: var(--g1);
 }
 
 button.link {
-	background-color: black;
-	border: 1px solid white;
+	background-color: var(--g1);
+	border: 1px solid var(--g10);
 	color: lightskyblue;
 }
 
 button.link:hover {
 	background-color: lightskyblue;
-	border: 1px solid black;
-	color: black;
+	border: 1px solid var(--g1);
+	color: var(--g1);
 }
 
 table {
@@ -273,7 +283,7 @@ th {
 td {
 	font-family: cpmono;
 	color: var(--neonyellow);
-	border: 1px solid #505050;
+	border: 1px solid var(--g5);
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -286,11 +296,11 @@ ul {
 
 .card {
 	width: 100%;
-	background-color: #101010;
+	background-color: var(--g1);
 }
 
 .card:hover {
-	background-color: #202020;
+	background-color: var(--g2);
 }
 
 .row {
@@ -329,7 +339,6 @@ ul {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	display: flex;
 }
 
 .picLarge {height: 320px;}
@@ -348,15 +357,18 @@ ul {
 	max-width: 256px;
 }
 
-.innerTextLeft, .innerTextRight {position: relative;}
-
-.innerTextLeft {left: 0px;}
-
-.innerTextRight {
-	right: 0px;
-	float: ;
-	text-align: right;
+.labdl, .labdr, .labul, .labur {
+	box-sizing: border-box;
+	position: absolute;
+	background-color: var(--g10);
+	color: var(--g1);
+	margin: 8px;
 }
+
+.labdl {bottom: 0px; left: 0px;}
+.labdr {bottom: 0px; right: 0px;}
+.labul {top: 0px; left: 0px;}
+.labur {top: 0px; right: 0px;}
 
 .chat {
 	position: absolute;
