@@ -1,3 +1,8 @@
+:root {
+	--lemon: #FAFA33;
+	--neongreen: #49fb35;
+}
+
 @font-face {
 	font-family: cpmono;
 	src: url(../fonts/cpmono/CPMono_v07\ Light.otf);
@@ -75,7 +80,7 @@ h6 {
 }
 
 a {
-	color: yellow;
+	color: var(--lemon);
 	text-decoration: none;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -95,7 +100,7 @@ header {
 	left: 0px;
 	right: 0px;
 	height: 40px;
-	background-color: yellow;
+	background-color: var(--lemon);
 	color: black;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -219,7 +224,7 @@ footer {
 	margin-top: 32px;
 	width: 100%;
 	box-sizing: border-box;
-	background-color: yellow;
+	background-color: var(--lemon);
 	color: black;
 }
 
@@ -276,7 +281,7 @@ button.warning:hover {
 button.danger {
 	background-color: black;
 	border: 1px solid red;
-	color: yellow;
+	color: var(--lemon);
 }
 
 button.danger:hover {
@@ -315,7 +320,7 @@ table {
 th {
 	font-family: cpmono;
 	text-align: left;
-	color: yellow;
+	color: var(--lemon);
 	background-color: purple;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -323,7 +328,7 @@ th {
 
 td {
 	font-family: cpmono;
-	color: yellow;
+	color: var(--lemon);
 	border: 1px solid #505050;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -385,7 +390,7 @@ ul {
 
 .divider {
 	width: 100%;
-	background-color: white;
+	background-color: var(--neongreen);
 	height: 1px;
 	margin-top: 16px;
 	margin-bottom: 16px;
