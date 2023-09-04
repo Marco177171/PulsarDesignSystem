@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	--neonyellow: #FFF01F;
 	--neongreen: #ADF802;
@@ -18,9 +22,18 @@
 	src: url(../fonts/cpmono/CPMono_v07\ Light.otf);
 }
 
+@font-face {
+	font-family: gravity;
+	src: url(../fonts/gravity/Gravity-Light.otf);
+}
+
+@font-face {
+	font-family: lane;
+	src: url(../fonts/lane/LANENAR_.ttf);
+}
+
 body {
 	margin: 0px;
-	box-sizing: border-box;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
@@ -29,10 +42,14 @@ body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar, .
     display: none;  /* Safari and Chrome */
 }
 
-h1, h2, h3, h4, h5, h6, p, span, a {
+h1, h2, h3, h4, h5, h6 {
 	font-family: cpmono;
 	margin: 8px;
-	box-sizing: border-box;
+}
+
+p, span, a {
+	font-family: gravity;
+	margin: 8px;
 }
 
 h1 {font-size: 4em;}
@@ -60,18 +77,6 @@ a:hover {text-decoration: underline;}
 	h5 {font-size: 1.1em;}
 }
 
-header {
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	height: 40px;
-	background-color: var(--neonyellow);
-	color: var(--g1);
-	padding-left: 8px;
-	padding-right: 8px;
-}
-
 input {
 	background-color: var(--g1);
 	color: var(--neongreen);
@@ -80,7 +85,6 @@ input {
 	width: 100%;
 	padding: 0px;
 	margin: 0px;
-	box-sizing: border-box;
 	font-size: 1em;
 }
 
@@ -122,35 +126,48 @@ input[type="color"] {-webkit-appearance: none;}
 input[type="color"]::-webkit-color-swatch {border: none;}
 input[type="color"]::-webkit-color-swatch-wrapper {padding: 0px;}
 
-nav {
+header, nav, .sideBar, main, .explorer {
 	position: fixed;
-	top: 40px;
-	left: 240px;
+}
+
+nav, main, .explorer {
+	left: 200px;
+}
+
+header {
+	top: 0px;
+	left: 0px;
 	right: 0px;
-	height: 24px;
+	height: 36px;
+	background-color: var(--neonyellow);
+	color: var(--g1);
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+nav {
+	top: 36px;
+	right: 0px;
+	height: 20;
 	padding-left: 8px;
 	padding-right: 8px;
 	background-color: purple;
 }
 
 main {
-	position: fixed;
-	top: 64px;
-	left: 240px;
+	top: 56px;
 	padding: 8px;
-	bottom: 24px;
+	bottom: 20px;
 	right: 0px;
-	display: block;
 	background-color: var(--g1);
 	color: var(--g10);
 	overflow-y: auto;
 }
 
 .sideBar {
-	position: fixed;
 	padding: 8px;
-	width: 224px;
-	top: 40px;
+	width: 200px;
+	top: 36px;
 	left: 0px;
 	bottom: 0px;
 	background-color: var(--g4);
@@ -159,18 +176,12 @@ main {
 	overflow-y: auto;
 }
 
-@media only screen and (max-width: 950px) {
-	.sideBar {display: none;}
-}
-
 .explorer {
-	position: fixed;
 	background-color: purple;
 	color: var(--g10);
-	left: 240px;
 	bottom: 0px;
 	right: 0px;
-	height: 24px;
+	height: 20px;
 	padding-left: 8px;
 	padding-right: 8px;
 	text-align: right;
@@ -179,7 +190,6 @@ main {
 footer {
 	margin-top: 32px;
 	width: 100%;
-	box-sizing: border-box;
 	background-color: var(--neonyellow);
 	color: var(--g1);
 }
@@ -189,6 +199,7 @@ footer a:hover {color: purple;}
 
 @media only screen and (max-width: 950px) {
 	main, nav, .explorer {left: 0px;}
+	.sideBar {display: none;}
 }
 
 button {
@@ -304,7 +315,6 @@ ul {
 }
 
 .row {
-	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -314,7 +324,6 @@ ul {
 }
 
 .col3, .col4, .col6, .col12 {
-	box-sizing: border-box;
 	padding: 8px;
 }
 
@@ -358,7 +367,6 @@ ul {
 }
 
 .labdl, .labdr, .labul, .labur {
-	box-sizing: border-box;
 	position: absolute;
 	background-color: var(--g10);
 	color: var(--g1);
@@ -372,7 +380,6 @@ ul {
 
 .chat {
 	position: absolute;
-	box-sizing: border-box;
 	overflow: auto;
 	top: 80px;
 	right: 8px;
@@ -382,7 +389,6 @@ ul {
 
 .chatInput {
 	position: absolute;
-	box-sizing: border-box;
 	left: 8px;
 	bottom: 12px;
 	right: 80px;
