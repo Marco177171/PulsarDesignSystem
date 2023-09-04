@@ -5,16 +5,16 @@
 :root {
 	--neonyellow: #FFF01F;
 	--neongreen: #ADF802;
-	--g1: #101010;
-	--g2: #202020;
-	--g3: #303030;
-	--g4: #404040;
-	--g5: #505050;
-	--g6: #606060;
-	--g7: #707070;
-	--g8: #808080;
-	--g9: #909090;
-	--g10: #D3D3D3;
+	--g1: #030303;
+	--g2: #060606;
+	--g3: #090909;
+	--g4: #121212;
+	--g5: #151515;
+	--g6: #181818;
+	--g7: #212121;
+	--g8: #242424;
+	--g9: #272727;
+	--g10: #808080;
 }
 
 @font-face {
@@ -140,7 +140,7 @@ header {
 	right: 0px;
 	height: 36px;
 	background-color: var(--neonyellow);
-	color: var(--g1);
+	color: var(black);
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -170,7 +170,7 @@ main {
 	top: 36px;
 	left: 0px;
 	bottom: 0px;
-	background-color: var(--g4);
+	background-color: var(--g2);
 	color: var(--g10);
     display: inline;
 	overflow-y: auto;
@@ -178,7 +178,6 @@ main {
 
 .explorer {
 	background-color: purple;
-	color: var(--g10);
 	bottom: 0px;
 	right: 0px;
 	height: 20px;
@@ -191,10 +190,11 @@ footer {
 	margin-top: 32px;
 	width: 100%;
 	background-color: var(--neonyellow);
-	color: var(--g1);
 }
 
 footer a {color: var(--g1);}
+footer p {color: var(--g1);}
+footer li {color: var(--g1);}
 footer a:hover {color: purple;}
 
 @media only screen and (max-width: 950px) {
@@ -271,6 +271,12 @@ button.link {
 	color: lightskyblue;
 }
 
+button.action {
+	background-color: var(--g3);
+	border: 1px solid var(--g9);
+	color: var(--g10);
+}
+
 button.link:hover {
 	background-color: lightskyblue;
 	border: 1px solid var(--g1);
@@ -283,7 +289,7 @@ table {
 }
 
 th {
-	font-family: cpmono;
+	font-family: gravity;
 	text-align: left;
 	color: var(--neonyellow);
 	background-color: purple;
@@ -292,7 +298,7 @@ th {
 }
 
 td {
-	font-family: cpmono;
+	font-family: gravity;
 	color: var(--neonyellow);
 	border: 1px solid var(--g5);
 	padding-left: 8px;
