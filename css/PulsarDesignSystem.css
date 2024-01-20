@@ -27,12 +27,12 @@
 }
 
 @font-face {
-	font-family: 'cpmono';
+	font-family: 'chakraPetch';
 	src: url(../fonts/ChakraPetch/ChakraPetch-Light.ttf);
 }
 
 @font-face {
-	font-family: 'gravity';
+	font-family: 'urbanist';
 	src: url(../fonts/Urbanist/Urbanist-Light.ttf);
 }
 
@@ -52,14 +52,14 @@ body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar, .
 }
 
 h1, h2, h3, h4, h5, h6, a {
-	font-family: cpmono;
+	font-family: chakraPetch;
 	margin: 8px;
 	font-weight:normal;
 	line-height: 150%;
 }
 
 p, span {
-	font-family: gravity;
+	font-family: urbanist;
 	margin: 8px;
 	line-height: 150%;
 }
@@ -101,7 +101,7 @@ mark {
 input {
 	background-color: var(--g1);
 	color: var(--g10);
-	font-family: cpmono;
+	font-family: chakraPetch;
 	border: 1px solid var(--g10);
 	width: 100%;
 	padding: 0px;
@@ -115,7 +115,7 @@ input::file-selector-button {
 	-webkit-appearance: none;
 	color: var(--g8);
 	background-color: var(--g2);
-	font-family: cpmono;
+	font-family: chakraPetch;
 	margin-right: 8px;
 	border: none;
 }
@@ -232,7 +232,7 @@ footer a:hover {color: purple;}
 }
 
 button {
-	font-family: cpmono;
+	font-family: chakraPetch;
 	font-size: 1em;
 	padding: 0px;
 	width: 100%;
@@ -319,7 +319,7 @@ table {
 }
 
 th {
-	font-family: gravity;
+	font-family: urbanist;
 	text-align: left;
 	color: white;
 	background: var(--sun);
@@ -328,7 +328,7 @@ th {
 }
 
 td {
-	font-family: gravity;
+	font-family: urbanist;
 	color: var(--neonyellow);
 	border: 1px solid var(--g5);
 	padding-left: 8px;
