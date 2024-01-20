@@ -3,8 +3,17 @@
 }
 
 :root {
-	--neonyellow: #FFF01F;
-	--neongreen: #ADF802;
+	--neongreen: #40F5AF;
+	--neonpurple: #E757F5;
+	--neonyellow: #F5DB71;
+	--neonblue: #4C51F5;
+	--neonred: #FC8168;
+	--excursion: linear-gradient(90deg, #4C51F5, #FC8168);
+	--ice: linear-gradient(90deg, #4C51F5, #40F5AF);
+	--lime: linear-gradient(90deg, #F5DB71, #40F5AF);
+	--py: linear-gradient(90deg, #E757F5, #F5DB71);
+	--sun: linear-gradient(90deg, #FC8168, #F5DB71);
+	--warm: linear-gradient(90deg, #E757F5, #FC8168);
 	--g1: #030303;
 	--g2: #060606;
 	--g3: #090909;
@@ -18,13 +27,13 @@
 }
 
 @font-face {
-	font-family: cpmono;
-	src: url(../fonts/cpmono/CPMono_v07\ Light.otf);
+	font-family: 'cpmono';
+	src: url(../fonts/ChakraPetch/ChakraPetch-Light.ttf);
 }
 
 @font-face {
-	font-family: gravity;
-	src: url(../fonts/gravity/Gravity-Light.otf);
+	font-family: 'gravity';
+	src: url(../fonts/Urbanist/Urbanist-Light.ttf);
 }
 
 @font-face {
@@ -42,14 +51,17 @@ body::-webkit-scrollbar, main::-webkit-scrollbar, .sideBar::-webkit-scrollbar, .
 		display: none;  /* Safari and Chrome */
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, a {
 	font-family: cpmono;
 	margin: 8px;
+	font-weight:normal;
+	line-height: 150%;
 }
 
-p, span, a {
+p, span {
 	font-family: gravity;
 	margin: 8px;
+	line-height: 150%;
 }
 
 h1 {font-size: 4em;}
@@ -88,7 +100,7 @@ mark {
 
 input {
 	background-color: var(--g1);
-	color: var(--neongreen);
+	color: var(--g10);
 	font-family: cpmono;
 	border: 1px solid var(--g10);
 	width: 100%;
@@ -145,31 +157,30 @@ header {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	height: 36px;
-	background-color: var(--neonyellow);
+	background: var(--lime);
 	color: var(black);
 	padding-left: 8px;
 	padding-right: 8px;
 }
 
 nav {
-	top: 36px;
+	top: 40px;
 	left: 0px;
+	height: 24px;
 	right: 0px;
-	height: 20;
 	padding-left: 8px;
 	padding-right: 8px;
-	background-color: purple;
+	background: var(--g3);
 }
 
 main {
-	top: 56px;
+	top: 64px;
 	padding: 8px;
-	bottom: 20px;
+	bottom: 24px;
 	right: 0px;
 	left: 220px;
 	background-color: var(--g1);
-	color: var(--g10);
+	color: white;
 	overflow-y: auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -179,9 +190,9 @@ main {
 .sideBar {
 	padding: 8px;
 	width: 220px;
-	top: 56px;
+	top: 64px;
 	left: 0px;
-	bottom: 20px;
+	bottom: 24px;
 	background-color: var(--g5);
 	color: var(--g10);
 	display: inline;
@@ -190,25 +201,29 @@ main {
 
 .explorer {
 	position: fixed;
-	background-color: purple;
+	background: var(--warm);
 	bottom: 0px;
 	right: 0px;
 	left: 0px;
-	height: 20px;
+	height: 24px;
 	padding-left: 8px;
 	padding-right: 8px;
 	text-align: right;
 }
 
+.explorer a {
+	color: white;
+}
+
 footer {
 	margin-top: 32px;
 	width: 100%;
-	background-color: var(--neonyellow);
+	background: var(--ice);
 }
 
-footer a {color: var(--g1);}
-footer p {color: var(--g1);}
-footer li {color: var(--g1);}
+footer a {color: white;}
+footer p {color: white;}
+footer li {color: white;}
 footer a:hover {color: purple;}
 
 @media only screen and (max-width: 950px) {
@@ -218,6 +233,7 @@ footer a:hover {color: purple;}
 
 button {
 	font-family: cpmono;
+	font-size: 1em;
 	padding: 0px;
 	width: 100%;
 	border: none;
@@ -305,8 +321,8 @@ table {
 th {
 	font-family: gravity;
 	text-align: left;
-	color: var(--neonyellow);
-	background-color: purple;
+	color: white;
+	background: var(--sun);
 	padding-left: 8px;
 	padding-right: 8px;
 }
@@ -359,7 +375,7 @@ ul {
 
 .divider {
 	width: 100%;
-	background-color: var(--neongreen);
+	background: var(--ice);
 	height: 1px;
 	margin-top: 16px;
 	margin-bottom: 16px;
@@ -378,9 +394,10 @@ ul {
 
 .centralLarge, .centralMedium {
 	position: relative;
-	top: 50%;
+	/* top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
+	margin: auto;
 	text-align: center;
 	place-items: center;
 	min-width: 200px;
@@ -398,7 +415,7 @@ ul {
 	position: absolute;
 	background-color: var(--g10);
 	color: var(--g1);
-	margin: 8px;
+	margin: 8px auto;
 }
 
 .labdl {bottom: 0px; left: 0px;}
@@ -451,7 +468,7 @@ ul {
 }
 
 .message, .chatAnswer {
-	margin: 16px;
+	margin: 16px auto;
 }
 
 .chatAnswer {
