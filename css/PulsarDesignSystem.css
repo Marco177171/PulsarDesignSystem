@@ -24,6 +24,8 @@
 	--g8: #242424;
 	--g9: #272727;
 	--g10: #808080;
+	--transBackColor: background-color 0.5s;
+	--transColor: color 0.5s;
 }
 
 @font-face {
@@ -83,6 +85,7 @@ a:hover {
 	text-decoration: none;
 	background-color: var(--neongreen);
 	color: var(--g1);
+	transition: var(--transBackColor), var(--transColor);
 }
 
 @media only screen and (max-width: 900px) {
@@ -170,7 +173,7 @@ nav {
 	right: 0px;
 	padding-left: 8px;
 	padding-right: 8px;
-	background: var(--g3);
+	background: var(--g8);
 }
 
 main {
@@ -193,7 +196,7 @@ main {
 	top: 64px;
 	left: 0px;
 	bottom: 24px;
-	background-color: var(--g5);
+	background-color: var(--g3);
 	color: var(--g10);
 	display: inline;
 	overflow-y: auto;
@@ -212,7 +215,7 @@ main {
 }
 
 .explorer a {
-	color: white;
+	color: var(--g2);
 }
 
 footer {
@@ -237,6 +240,7 @@ button {
 	padding: 0px;
 	width: 100%;
 	border: none;
+	transition: var(--transBackColor), var(--transColor);
 }
 
 button.default {
@@ -316,10 +320,11 @@ button.link:hover {
 table {
 	table-layout: fixed;
 	width: 100%;
+	line-height: 150%;
+	font-family: urbanist;
 }
 
 th {
-	font-family: urbanist;
 	text-align: left;
 	color: white;
 	background: var(--sun);
@@ -328,7 +333,6 @@ th {
 }
 
 td {
-	font-family: urbanist;
 	color: var(--neonyellow);
 	border: 1px solid var(--g5);
 	padding-left: 8px;
@@ -344,6 +348,7 @@ ul {
 .card {
 	width: 100%;
 	background-color: var(--g4);
+	transition: var(--transBackColor), var(--transColor);
 }
 
 .card:hover {
