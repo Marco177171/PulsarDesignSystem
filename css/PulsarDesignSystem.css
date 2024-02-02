@@ -239,7 +239,7 @@ button {
 	font-size: 1em;
 	padding: 0px;
 	width: 100%;
-	border: none;
+	border-radius: 8px;
 	transition: var(--transBackColor), var(--transColor);
 }
 
@@ -391,6 +391,7 @@ ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: var(--g4);
+	border-radius: 8px;
 }
 
 .picLarge {height: 320px;}
