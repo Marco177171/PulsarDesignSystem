@@ -222,6 +222,7 @@ footer {
 	margin-top: 32px;
 	width: 100%;
 	background: var(--ice);
+	border-radius: 8px;
 }
 
 footer a {color: white;}
@@ -237,7 +238,7 @@ footer a:hover {color: purple;}
 button {
 	font-family: chakraPetch;
 	font-size: 1em;
-	padding: 0px;
+	padding: 8px;
 	width: 100%;
 	border-radius: 8px;
 	transition: var(--transBackColor), var(--transColor);
@@ -348,6 +349,8 @@ ul {
 .card {
 	width: 100%;
 	background-color: var(--g4);
+	padding: 8px;
+	border-radius: 16px;
 	transition: var(--transBackColor), var(--transColor);
 }
 
@@ -399,10 +402,10 @@ ul {
 .picSmall {height: 160px;}
 
 .centralLarge, .centralMedium {
-	position: relative;
-	/* top: 50%;
+	position: absolute;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); */
+	transform: translate(-50%, -50%);
 	margin: auto;
 	text-align: center;
 	place-items: center;
