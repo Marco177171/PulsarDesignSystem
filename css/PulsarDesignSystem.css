@@ -349,7 +349,11 @@ ul {
 
 .card {
 	width: 100%;
+<<<<<<< HEAD
 	background-color: var(--g3);
+=======
+	background-color: var(--g4);
+>>>>>>> 599b194b4cc556dca5f41ed921cb5ba7e23e3471
 	padding: 8px;
 	border-radius: 16px;
 	transition: var(--transBackColor), var(--transColor);
