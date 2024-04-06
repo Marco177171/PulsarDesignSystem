@@ -162,9 +162,10 @@ header {
 	left: 0px;
 	right: 0px;
 	background: var(--lime);
-	color: var(black);
 	padding-left: 8px;
 	padding-right: 8px;
+	display: flex;
+	h6 {color: var(--g2);}
 }
 
 nav {
@@ -201,6 +202,30 @@ main {
 	color: var(--g10);
 	display: inline;
 	overflow-y: auto;
+}
+
+.sideBarBottom {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+@keyframes slide_animation {
+	0% {transform: translate3d(0, 0, 0);}
+	100% {transform: translate3d(-50%, 0, 0);}
+}
+
+.slideBanner {
+	display: flex;
+	width: 6000px;
+	justify-content: space-around;
+	background-color: var(--g5);
+	animation: slide_animation 35s linear infinite;
+	* {
+		color: var(--neongreen);
+		margin: 0px;
+	}
 }
 
 .explorer {
@@ -349,18 +374,14 @@ ul {
 
 .card {
 	width: 100%;
-<<<<<<< HEAD
-	background-color: var(--g3);
-=======
-	background-color: var(--g4);
->>>>>>> 599b194b4cc556dca5f41ed921cb5ba7e23e3471
+	background-color: var(--g5);
 	padding: 8px;
 	border-radius: 16px;
 	transition: var(--transBackColor), var(--transColor);
 }
 
 .card:hover {
-	background-color: var(--g4);
+	background-color: var(--g6);
 }
 
 .row {
@@ -402,9 +423,9 @@ ul {
 	border-radius: 8px;
 }
 
-.picLarge {height: 320px;}
-.picMedium {height: 256px;}
-.picSmall {height: 160px;}
+.picLarge {aspect-ratio: 1/1;}
+.picMedium {aspect-ratio: 4/3;}
+.picSmall {aspect-ratio: 16/9;}
 
 .centralLarge, .centralMedium {
 	position: absolute;
@@ -414,15 +435,16 @@ ul {
 	margin: auto;
 	text-align: center;
 	place-items: center;
-	min-width: 200px;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .centralLarge {
-	max-width: 512px;
+	width: 512px;
 }
 
 .centralMedium {
-	max-width: 256px;
+	width: 256px;
 }
 
 .labdl, .labdr, .labul, .labur {
